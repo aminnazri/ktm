@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <title>KTM SCHEDULE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
 
     <style>
@@ -32,7 +32,10 @@ color:white;
         <div class="card">
             <div class="card-header"><b>Select Excel File</b></div>
             <div class="card-body">
-
+                <button type="button" class="btn btn-outlinem-sm btn-dark mb-2"><a class="text-white text-decoration-none" href="https://www.pdf2go.com/pdf-to-excel">PDF 2 EXCEL</a></button>
+                <br>
+                
+                <label class="form-label" for="excel_file">Default file input example</label>
                 <input type="file" id="excel_file" class="form-control"/>
                 
                 <select id="start-select" onchange="showRows()" class="form-control mt-3">
