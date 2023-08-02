@@ -32,7 +32,7 @@ color:white;
         <div class="card">
             <div class="card-header"><b>Select Excel File</b></div>
             <div class="card-body">
-                <button type="button" class="btn btn-outlinem-sm btn-dark mb-2"><a class="text-white text-decoration-none" href="https://www.pdf2go.com/pdf-to-excel">PDF 2 EXCEL</a></button>
+                <button type="button" class="btn btn-outlinem-sm btn-black mb-2"><a class="text-white text-decoration-none" href="https://www.pdf2go.com/pdf-to-excel">PDF 2 EXCEL</a></button>
                 <br>
                 
                 <label class="form-label" for="excel_file">Default file input example</label>
@@ -143,7 +143,7 @@ color:white;
         // var endOption = document.getElementById("end-select").value;
 
         if (sheet_data && sheet_data.length > 0) {
-            var table_output = '<table class="table table-hover-bg  table-bordered" id=example>';
+            var table_output = '<table class="table table-hover  table-bordered" id=example>';
 
             for (var row = 0; row < sheet_data.length; row++) {
                 table_output += '<tr>';
@@ -164,7 +164,8 @@ color:white;
                         // if ((startOption === '' ||  sheet_data[row][0] == startOption) && (endOption === '' ||  sheet_data[row][0] == endOption)) {
 
                         if ((startOption === '' ||  sheet_data[row][0] == startOption)) {
-                            table_output += '<td>' + sheet_data[row][cell] + '</td>';
+                           
+                            table_output += '<td class="data">' + sheet_data[row][cell] + '</td>';
                         }
                         '</tbody>'
                     }
@@ -183,13 +184,7 @@ color:white;
         showRows();
     });
 
-//     $(document).ready(function () {
-//     var table = $('#example').DataTable();
-
-// });
-$('#example tbody').on( 'click', 'tr', function () {
-    $(this).toggleClass('active');
-} );
+    
 </script>
 
 
